@@ -26,3 +26,9 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.route-container{
+  background: goldenrod;
+  transition: 1s;
+  overflow: hidden;
+}
