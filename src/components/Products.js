@@ -3,7 +3,10 @@ import React, { Component } from 'react';
 export default class Products extends Component {
 
     componentDidMount(){
-        this.props.setHeight(window.document.getElementById('products-container').clientHeight +'px')
+        this.props.setHeight(document.getElementById('products-container').clientHeight +'px')
+    }
+    componentDidUpdate(){
+        this.props.setHeight(document.getElementById('products-container').clientHeight +'px')
     }
     render() {
         return (
